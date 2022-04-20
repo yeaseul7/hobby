@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>★우찬아 너를 위해 누나가 준비했어★</title>
+    <style>
+      body{background-color: #DEFFBE; text-align: center; margin: 100px;}
+      hr{height: 5px;border: #111;
+        background-color: #111;}
+      ul{
+        list-style: none;
+      }
+      
+    </style>
+    <script>
+      function submit(){
+        const element=document.querySelector('input[name=exer]:checked');
+        
+        if(element.value=="농구"){
+          alert("정답!!")
+        } else{
+          alert("오답....이걸 틀려..?")
+        }
+      } 
+    
+      function submit2(){
+        const element=document.querySelector('input[name=game]:checked');
+        
+        if(element.value=="롤"){
+          alert("만년 실딱 life♥︎(정답)")
+        } else{
+          alert("ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ아직 게임밖에 모르는 16살 애기래요~")
+        }
+      } 
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center;"><span style="background-color: #FFF2AB;">이우찬</span></h1>
+    <img src="img/P20211204_155550966_94728DE7-2223-456C-93B6-52282795FAF1.jpg" style="display: block; margin: 0 auto; width="200" height="270">
+    <p style="text-align: center;"><span style="background-color: #FFF2AB;">✭아직 수염이 나지 않은 16살사춘기 소년✭</span><p>
+    <hr>
+    <h2>우리는 우찬이를 얼마나 알고있을까?</h2>
+    <h3>Q1.우찬이의 <span style="background-color: #FF5F5F; color: #fff;">❤︎생일❤︎</span>은?</h3>
+    <form>
+      <legend>이거 못맞추면 서운해☹︎</legend>
+      <ul>
+        <li>
+          <label><input type="date" id="birth"></label>
+          <button type="button" class="correct" onclick="window.open('correct1.html')">정답은?</button>
+        </li>
+      </ul>
+    </form>
+    <h3>Q2.우찬이가 좋아하는 음식은?</h3>
+    <label >음식</label>
+    <select >
+      <option value="ice">아이스크림</option>
+      <option value="snack">과자</option>
+      <option value="rip">장류(연어장,간장개장)</option>
+      <option value="sushi">스시</option>
+      <option value="noodle">라면</option>
+    </select>
+    <button type="button" class="correct" onclick="window.open('correct2.html')">정답은?</button>
+    <h3>Q3.우찬이는 지금 여자친구를 사귀고 싶어할까?!!!</h3>
+    <ul>
+      <li>
+        <label><input type="radio" name="girl" value="yes">YES</label>
+      </li>
+      <li>
+        <label><input type="radio" name="girl" value="no">NO</label>
+      </li>
+      <button type="button" class="correct" onclick="window.open('correct3.html')">정답은?</button>
+    </ul>
+    <h3>Q4.우찬이가 요즘 좋아하는 운동은?</h3>
+    <ul>
+      <li>
+        <label><input type="radio" name="exer" value="농구">농구</label>
+      </li>
+      <li>
+        <label><input type="radio" name="exer" value="축구">축구</label>
+      </li>
+      <li>
+        <label><input type="radio" name="exer" value="족구">족구</label>
+      </li>
+      <button type="button" class="correct" onclick="submit()">정답은?</button>
+    </ul>
+    <h3>Q5.우찬이가 요즘 좋아하는 것은?</h3>
+    <ul>
+      <li>
+        <label><input type="radio" name="game" value="유튜브">유튜브 시청하기</label>
+      </li>
+      <li>
+        <label><input type="radio" name="game" value="롤">롤 하면서 친구들이랑 놀기</label>
+      </li>
+      <li>
+        <label><input type="radio" name="game" value="썸녀랑 연락">썸녀랑 연락하기</label>
+      </li>
+      <button type="button" class="correct" onclick="submit2()">정답 확인</button>
+    </ul>
+    <h3>Q6.우찬이가 요즘 먹고싶어하는 것은?</h3>
+    <label >골라보세용</label>
+    <select >
+      <option value="tom">학교 앞 톰과제리 떡볶이</option>
+      <option value="yum">없어진 먹자클럽 떡볶이</option>
+      <option value="by">우찬이의 자전거 앞바퀴</option>
+      <option value="nurung">콩이의 발바닥 냄새나는 누룽지</option>
+      <option value="st">딸기맛 펄이 들어간 공차 딸기 버블티</option>
+    </select>
+    <button type="button" class="correct" onclick="window.open('correct4.html')">정답은?</button>
+  </body>
+</html>
